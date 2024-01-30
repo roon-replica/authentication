@@ -23,6 +23,12 @@ repositories {
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-starter-oauth2-client") // 이 의존성 추가하면 secure your app with OAuth 2.0 by default.
+
+    implementation("org.webjars:jquery:3.7.1") // for demo UI
+    implementation("org.webjars:bootstrap:5.3.2") // for demo UI
+    implementation("org.webjars:webjars-locator-core:0.55") // for demo UI
+
     compileOnly("org.projectlombok:lombok")
     annotationProcessor("org.projectlombok:lombok")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
